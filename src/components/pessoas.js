@@ -4,11 +4,11 @@ const Pessoas = ({pessoas}) => {
     return(
         <div>
             <center><h1>Lista de Personagens</h1></center>
-            {pessoas.map((pessoas) => (
+            {pessoas.map((item) => (
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">{pessoas.name}</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">{pessoas.gender}</h6>
+                        <h5 class="card-title">{item.name}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{item.gender}</h6>
                     </div>
                 </div>
             ))}

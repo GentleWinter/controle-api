@@ -9,7 +9,7 @@ class App extends Component {
     fetch('https://swapi.co/api/people')
     .then(res => res.json())
     .then((data) => {
-      this.setState({ contacts: data })
+      this.setState({ pessoas: data })
     })
     .catch(console.log)
   }
